@@ -65,7 +65,7 @@ A **Visitor Management System (VMS)** streamlines and secures how workplaces, co
 
 > Ranked in **descending order** by GitHub Star count. Badges link directly to each repository's stargazers page.
 
-| Project & Repository | Star Count | Tech Stack | Key Features & Highlights |
+| Project & Repository | Star_Count | Tech Stack | Key Features & Highlights |
 | :--- | :--- | :--- | :--- |
 | **[neozhu/visitormanagement](https://github.com/neozhu/visitormanagement)** | [![GitHub stars](https://img.shields.io/github/stars/neozhu/visitormanagement?style=social&color=white)](https://github.com/neozhu/visitormanagement/stargazers) | .NET 8 • C# • MudBlazor • Clean Architecture | Full-featured enterprise web portal for visitor check-in, employee host directories, photo capture, thermal badge printing, e-signatures, SMS/Email alerts, and analytics dashboards. |
 | **[AmitXShukla/Visitor-Management-App](https://github.com/AmitXShukla/Visitor-Management-App)** | [![GitHub stars](https://img.shields.io/github/stars/AmitXShukla/Visitor-Management-App?style=social&color=white)](https://github.com/AmitXShukla/Visitor-Management-App/stargazers) | Angular 13 • Node.js • Express • MongoDB (MEAN) | Complete electronic visitor logging application with responsive Angular frontend, host scheduling, guest database management, and token-based authentication. |
