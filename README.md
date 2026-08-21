@@ -10,7 +10,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 **Examples** include Envoy, Proxyclick (Eptura Visitor), HID Visitor Manager, The Receptionist, Eden Workplace, SwipedOn, Sign In App, Veris Welcome, Traction Guest / Sign In Solutions, and Archie (the category leaders).
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom kiosk flows, badge printing, notifications, and open visitor data processing — ideal for offices, campuses, factories, researchers, and developers building transparent, privacy-focused visitor solutions.
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom kiosk flows, badge printing, notifications, and open visitor data processing â€” ideal for offices, campuses, factories, researchers, and developers building transparent, privacy-focused visitor solutions.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
@@ -22,35 +22,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[Envoy](https://envoy.com/products/visitors)**  
-  Enterprise-grade visitor management with polished iPad check-in, pre-registration, photo badges, NDA signing, host notifications (Slack/Teams/email), watchlists, multi-location support, and deep access-control integrations. Part of a broader workplace platform.
-
-- **[Proxyclick (Eptura Visitor)](https://www.eptura.com/)**  
-  Cloud-based enterprise visitor platform (formerly Proxyclick) with customizable workflows, pre-registration, badge printing, watchlist screening, compliance tools, and integrations into wider IWMS suites.
-
-- **[HID Visitor Manager](https://www.hidglobal.com/products/hid-visitor-manager)**  
-  Cloud visitor management from HID Global focused on seamless check-in, temporary badges, large-group flows, watchlists, and tight integration with physical access control and identity systems.
-
-- **[The Receptionist](https://thereceptionist.com/)**  
-  Simple, reliable iPad-based visitor check-in with customizable flows, two-way host messaging (SMS/Slack/Teams), photo badges, and strong focus on small-to-mid-sized offices.
-
-- **[Eden Workplace](https://www.edenworkplace.com/visitor-management)**  
-  Visitor management module within a broader workplace platform offering pre-registration, kiosk/app check-in, NDA signing, badge printing, host notifications, and integrations with Slack, Teams, and calendars.
-
-- **[SwipedOn](https://www.swipedon.com/)**  
-  Budget-friendly, user-friendly visitor and employee sign-in system with kiosks, photo capture, digital badges, evacuation tools, and multi-site support for SMBs and mid-market offices.
-
-- **[Sign In App](https://signinapp.com/)**  
-  Compliance-oriented visitor management (UK/EU focus) with digital sign-in, screening, badges, multi-location logs, and strong GDPR/audit features.
-
-- **[Veris Welcome](https://www.getveris.com/veris-visitor-management)**  
-  Enterprise visitor experience platform with touchless/face-recognition check-in, e-badges, host notifications, watchlists, parking integration, and highly customizable workflows.
-
-- **[Traction Guest / Sign In Solutions](https://www.signinsolutions.com/)**  
-  Enterprise compliance-focused visitor management (formerly Traction Guest) with advanced screening, watchlists, custom forms, NDAs, multi-site policy enforcement, and audit-ready logs.
-
-- **[Archie](https://archieapp.co/)**  
-  Modern visitor management combined with desk/room booking and workplace analytics; iPad/Android kiosks, pre-registration, badges, and hybrid-office features for mid-to-large offices.
+| Platform | Description | Starting Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Envoy](https://envoy.com/products/visitors)** | Enterprise-grade visitor management with polished iPad check-in, pre-registration, photo badges, NDA signing, host notifications (Slack/Teams/email), watchlists, multi-location support, and deep access-control integrations. | Free Basic plan ($0); Standard tier starts at **$109 / location / month** (billed annually) | **Free forever plan**: Up to 100 visitor entries/month (includes host notifications and employee directory; excludes badge printing/NDAs); plus 14-day free trial on paid tiers |
+| **[Proxyclick (Eptura Visitor)](https://www.eptura.com/)** | Cloud-based enterprise visitor platform with customizable workflows, pre-registration, badge printing, watchlist screening, compliance tools, and integrations into wider IWMS suites. | Essential tier starts at **$100 / location / month** (billed annually) | **15-day free trial** with access to core visitor check-in features (no permanent free tier) |
+| **[HID Visitor Manager](https://www.hidglobal.com/products/hid-visitor-manager)** | Cloud visitor management focused on seamless check-in, temporary badges, large-group flows, watchlists, and tight physical access control (PACS) integration. | Base cloud subscription starts at **$2,500 / year** per site (or perpetual workstation packages from **$1,000**) | **30-day proof-of-concept / guided trial** in authorized partner demo environment (no permanent free tier) |
+| **[The Receptionist](https://thereceptionist.com/)** | iPad-based visitor check-in with customizable flows, two-way host messaging (SMS/Slack/Teams), photo badges, and SMB focus. | Core tier starts at **$49 / month** ($630 / site / year billed annually) | **15-day free trial** with full feature access and unlimited check-ins for 1 location (no credit card required) |
+| **[Eden Workplace](https://www.edenworkplace.com/visitor-management)** | Modular visitor management offering pre-registration, kiosk/app check-in, NDA signing, badge printing, host notifications, and workplace integrations. | Visitor Management module starts at **$59 / location / month** (billed annually) | **14-day guided free trial / sandbox demo** upon request (no permanent free tier) |
+| **[SwipedOn](https://www.swipedon.com/)** | Visitor and employee sign-in system with kiosks, photo capture, digital badges, evacuation tools, and multi-site support. | Starter tier starts at **$49 / location / month** (billed annually) | **14-day free trial** with full platform features for 1 location/device (no credit card required) |
+| **[Sign In App](https://signinapp.com/)** | Compliance-oriented visitor management with digital sign-in, screening, badges, multi-location logs, and GDPR/audit features. | Core tier starts at **$52.50 / month** ($630 / site / year billed annually) | **15-day free trial** with full feature access, unlimited staff & visitor entries for 1 site (no credit card required) |
+| **[Veris Welcome](https://www.getveris.com/veris-visitor-management)** | Enterprise visitor platform with touchless/face-recognition check-in, e-badges, host notifications, watchlists, and parking integration. | Base entry tier starts at **$50 / terminal / month** (annual contract) | **14-day pilot / demo sandbox** for 1 facility with up to 100 test visitor entries (no permanent free tier) |
+| **[Traction Guest / Sign In Solutions](https://www.signinsolutions.com/)** | Enterprise compliance-focused visitor management with advanced screening, watchlists, custom forms, NDAs, and multi-site policy enforcement. | Enterprise entry packages start at **$300 / location / month** (billed annually) | **15-day sandbox trial / proof-of-concept** with pre-configured guest compliance workflows (no permanent free tier) |
+| **[Archie](https://archieapp.co/)** | Visitor management combined with desk/room booking and workplace analytics; iPad/Android kiosks, pre-registration, badges, and hybrid-office features. | Standalone Visitor Management starts at **$109 / location / month** (or $159/month bundled) | **14-day free trial** with unlimited visitor check-ins and kiosk access for 1 location |
 
 ## Open-Source GitHub Projects
 
@@ -106,14 +89,14 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 1. Fork the repo.
 2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+3. Include: name, link, 1â€“2 sentence description, and whether it's SaaS or open-source.
 4. Submit PR with a short explanation.
 
 Star the repo if you find it useful!
 
 ## Disclaimer
 
-- This is a **community-curated** list — not exhaustive and not an endorsement.
+- This is a **community-curated** list â€” not exhaustive and not an endorsement.
 - Visitor management tools must comply with privacy regulations (GDPR, CCPA, etc.) and workplace security policies.
 - Self-hosted open-source solutions require proper security hardening, data retention policies, backups, and reliable hardware for kiosks/printers.
 
