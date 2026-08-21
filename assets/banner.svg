@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#c084fc;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#c084fc;#38bdf8;#818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#34d399">
+        <animate attributeName="stop-color" values="#34d399;#38bdf8;#818cf8;#34d399" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Badge Card Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="badge-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.6" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.08); }
+    }
+    @keyframes floatPass {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1.5deg); }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(0px); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translateY(180px); opacity: 0; }
+    }
+    @keyframes particleMove {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-30px) translateX(15px); opacity: 0.8; }
+      100% { transform: translateY(-60px) translateX(-10px); opacity: 0; }
+    }
+    .title-text {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+    .sub-text {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .floating-card {
+      animation: floatPass 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .scanner-beam {
+      animation: scanLine 3.5s ease-in-out infinite;
+    }
+    .glowing-orb {
+      animation: pulseGlow 5s ease-in-out infinite;
+    }
+    .particle {
+      animation: particleMove 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16" />
+  <rect width="1200" height="420" fill="url(#grid)" rx="16" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="100" r="140" fill="#38bdf8" opacity="0.15" filter="url(#glow-cyan)" class="glowing-orb" />
+  <circle cx="1020" cy="280" r="180" fill="#818cf8" opacity="0.18" filter="url(#glow-cyan)" class="glowing-orb" style="animation-delay: 2.5s;" />
+  <circle cx="650" cy="380" r="120" fill="#34d399" opacity="0.12" filter="url(#glow-cyan)" class="glowing-orb" style="animation-delay: 1.2s;" />
+
+  <!-- Dynamic Particles -->
+  <circle cx="180" cy="300" r="3" fill="#38bdf8" class="particle" style="animation-delay: 0.2s;" />
+  <circle cx="340" cy="120" r="2.5" fill="#818cf8" class="particle" style="animation-delay: 1.5s;" />
+  <circle cx="520" cy="360" r="3" fill="#34d399" class="particle" style="animation-delay: 2.7s;" />
+  <circle cx="1100" cy="140" r="2" fill="#c084fc" class="particle" style="animation-delay: 0.9s;" />
+  <circle cx="850" cy="80" r="3.5" fill="#38bdf8" class="particle" style="animation-delay: 2.1s;" />
+
+  <!-- Left Content: Hero Text & Badges -->
+  <g transform="translate(80, 85)">
+    <!-- Category Badge Tag -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8" />
+      <circle cx="18" cy="17" r="5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="32" y="22" fill="#38bdf8" class="sub-text" font-size="13" font-weight="700" letter-spacing="1">CURATED DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="85" fill="#ffffff" class="title-text" font-size="44">Awesome Visitor</text>
+    <text x="0" y="135" fill="url(#accent-grad)" class="title-text" font-size="44">Management Systems</text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="180" fill="#94a3b8" class="sub-text" font-size="16">
+      Comprehensive collection of enterprise SaaS platforms &amp; open-source projects
+    </text>
+    <text x="0" y="206" fill="#64748b" class="sub-text" font-size="14.5">
+      Kiosks • QR Badges • Host Notifications • NDA Compliance • Access Control
+    </text>
+
+    <!-- Feature Pill Badges -->
+    <g transform="translate(0, 240)">
+      <!-- Pill 1: SaaS Leaders -->
+      <rect x="0" y="0" width="130" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="12" y="19" fill="#38bdf8" class="sub-text" font-size="12" font-weight="600">🏢 Top SaaS</text>
+
+      <!-- Pill 2: Open Source -->
+      <rect x="142" y="0" width="150" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="154" y="19" fill="#34d399" class="sub-text" font-size="12" font-weight="600">💻 Open-Source</text>
+
+      <!-- Pill 3: Star Rated -->
+      <rect x="304" y="0" width="135" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="316" y="19" fill="#c084fc" class="sub-text" font-size="12" font-weight="600">⭐ Ranked Stars</text>
+
+      <!-- Pill 4: Pricing Limits -->
+      <rect x="451" y="0" width="165" height="30" rx="8" fill="#1e293b" stroke="#334155" />
+      <text x="463" y="19" fill="#f59e0b" class="sub-text" font-size="12" font-weight="600">🏷️ Transparent Tiers</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: Digital Badge & Interactive Kiosk Pass Graphic -->
+  <g transform="translate(850, 65)" class="floating-card">
+    <!-- Pass Card Shadow -->
+    <rect x="-10" y="-10" width="280" height="300" rx="24" fill="#0284c7" opacity="0.15" filter="url(#badge-glow)" />
+
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="260" height="280" rx="20" fill="url(#card-grad)" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.7" />
+
+    <!-- Card Lanyard Hole -->
+    <rect x="105" y="12" width="50" height="8" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+
+    <!-- Card Header Banner -->
+    <rect x="0" y="32" width="260" height="42" fill="#1e293b" />
+    <circle cx="32" cy="53" r="14" fill="#0284c7" opacity="0.3" />
+    <path d="M 27 53 L 31 57 L 38 49" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="56" y="58" fill="#f8fafc" class="sub-text" font-size="13" font-weight="700" letter-spacing="1">VISITOR PASS</text>
+    <rect x="180" y="44" width="65" height="18" rx="9" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="194" y="57" fill="#34d399" class="sub-text" font-size="10" font-weight="700">ACTIVE</text>
+
+    <!-- Visitor Avatar & Info -->
+    <g transform="translate(25, 95)">
+      <!-- Avatar Box -->
+      <rect x="0" y="0" width="55" height="55" rx="12" fill="#334155" stroke="#475569" stroke-width="1" />
+      <circle cx="27.5" cy="22" r="10" fill="#94a3b8" />
+      <path d="M 12 48 C 12 38 18 36 27.5 36 C 37 36 43 38 43 48 Z" fill="#94a3b8" />
+
+      <!-- Text Details -->
+      <text x="68" y="18" fill="#f1f5f9" class="title-text" font-size="14" font-weight="700">Guest Visitor</text>
+      <text x="68" y="34" fill="#38bdf8" class="sub-text" font-size="11" font-weight="600">Host: Engineering</text>
+      <text x="68" y="48" fill="#64748b" class="sub-text" font-size="10">Check-in: 09:30 AM</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="25" y1="168" x2="235" y2="168" stroke="#334155" stroke-dasharray="4 4" />
+
+    <!-- QR Code Mockup Graphic -->
+    <g transform="translate(25, 185)">
+      <rect x="0" y="0" width="65" height="65" rx="8" fill="#ffffff" />
+      <!-- QR Pattern Elements -->
+      <rect x="6" y="6" width="20" height="20" fill="#0f172a" rx="2" />
+      <rect x="10" y="10" width="12" height="12" fill="#ffffff" rx="1" />
+      <rect x="13" y="13" width="6" height="6" fill="#0f172a" />
+
+      <rect x="39" y="6" width="20" height="20" fill="#0f172a" rx="2" />
+      <rect x="43" y="10" width="12" height="12" fill="#ffffff" rx="1" />
+      <rect x="46" y="13" width="6" height="6" fill="#0f172a" />
+
+      <rect x="6" y="39" width="20" height="20" fill="#0f172a" rx="2" />
+      <rect x="10" y="43" width="12" height="12" fill="#ffffff" rx="1" />
+      <rect x="13" y="46" width="6" height="6" fill="#0f172a" />
+
+      <rect x="32" y="32" width="6" height="6" fill="#0f172a" />
+      <rect x="42" y="32" width="17" height="6" fill="#0f172a" />
+      <rect x="32" y="42" width="6" height="17" fill="#0f172a" />
+      <rect x="44" y="44" width="15" height="15" fill="#0f172a" rx="2" />
+
+      <!-- QR Details -->
+      <text x="78" y="24" fill="#cbd5e1" class="sub-text" font-size="12" font-weight="600">Scan at Kiosk</text>
+      <text x="78" y="40" fill="#64748b" class="sub-text" font-size="10.5">NDA: Signed ✓</text>
+      <text x="78" y="55" fill="#64748b" class="sub-text" font-size="10.5">WiFi: Authorized</text>
+    </g>
+
+    <!-- Laser Scanner Line Beam (Animated) -->
+    <g class="scanner-beam" transform="translate(15, 80)">
+      <line x1="0" y1="0" x2="230" y2="0" stroke="#38bdf8" stroke-width="2" opacity="0.8" filter="url(#glow-cyan)" />
+      <polygon points="0,0 230,0 215,8 15,8" fill="#38bdf8" opacity="0.18" />
+    </g>
+  </g>
+</svg>
